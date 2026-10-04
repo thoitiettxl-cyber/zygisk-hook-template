@@ -1,0 +1,17 @@
+[versions]
+# Version AGP/Kotlin copy từ HMA-OSS tại thời điểm template được dựng (2026-10-04);
+# có thể bump sau khi build thử thành công trên CI/máy build thật.
+agp = "8.13.2"
+kotlin = "2.3.21"
+zygoteloader = "2a2160f"
+r8_annotations = "v1.0.1"
+
+[plugins]
+agp-app = { id = "com.android.application", version.ref = "agp" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# Plugin ZygoteLoader từ JitPack: github.com/aerath-stuff/ZygoteLoader, pin 2a2160f
+# (cùng version HMA-OSS đang dùng)
+com-github-aerathstuff-zygoteloader = { id = "com.github.aerath-stuff.ZygoteLoader", version.ref = "zygoteloader" }
+
+[libraries]
+io-github-vova7878-r8annotations = { module = "io.github.vova7878:R8Annotations", version.ref = "r8_annotations" }

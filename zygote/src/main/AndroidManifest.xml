@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Manifest tối thiểu cho application module của Zygisk module.
+     HMA-OSS dùng đúng <manifest /> rỗng — ZygoteLoader plugin tự sinh phần cần thiết. -->
+<manifest />
